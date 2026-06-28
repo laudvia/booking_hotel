@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffcf75"/><stop offset=".5" stop-color="#86e8ff"/><stop offset="1" stop-color="#fff2c2"/></linearGradient></defs>
+  <rect width="900" height="680" fill="url(#sky)"/>
+  <circle cx="450" cy="185" r="105" fill="#ff7b55" opacity=".95"/>
+  <path d="M0 355 C220 310 370 395 540 350 C700 308 790 355 900 330 L900 680 L0 680Z" fill="#079ec0"/>
+  <path d="M0 455 C180 420 310 500 500 460 C690 420 760 480 900 450 L900 680 L0 680Z" fill="#ffdb90"/>
+  <rect x="185" y="230" width="530" height="255" rx="28" fill="#fff"/>
+  <rect x="235" y="275" width="92" height="90" rx="18" fill="#a9effc"/><rect x="405" y="275" width="92" height="90" rx="18" fill="#a9effc"/><rect x="575" y="275" width="92" height="90" rx="18" fill="#a9effc"/>
+  <rect x="365" y="390" width="170" height="95" rx="20" fill="#06313f"/>
+  <path d="M150 230 L450 115 L750 230Z" fill="#ff8a5c"/>
+  <ellipse cx="450" cy="545" rx="250" ry="45" fill="#08b5d5" opacity=".55"/>
+</svg>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SeaStay — бронирование отелей у моря</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="page-glow"></div>
+  <header class="site-header">
+    <a class="logo" href="#">
+      <span class="logo-mark">☀</span>
+      <span>SeaStay</span>
+    </a>
+    <nav class="nav">
+      <a href="#hotels">Отели</a>
+      <a href="#places">Направления</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#booking">Бронь</a>
+    </nav>
+    <button class="menu-button" aria-label="Открыть меню">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/hero-beach.svg" alt="" />
+      </div>
+      <div class="floating-card weather-card">
+        <span>Сегодня</span>
+        <strong>+29°C</strong>
+        <small>солнечно · вода +24°C</small>
+      </div>
+      <div class="floating-card rating-card">
+        <strong>4.9 ★</strong>
+        <span>12 800 отзывов</span>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Бронирование отелей на море</p>
+        <h1>Найди отель, где утро начинается с шума волн</h1>
+        <p class="hero-text">Подборка пляжных отелей, вилл и апартаментов с видом на море, бассейнами, завтраками и быстрым бронированием.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#booking">Найти отель</a>
+          <a class="btn ghost" href="#hotels">Смотреть подборку</a>
+        </div>
+      </div>
+
+      <form class="search-panel" id="booking">
+        <label>
+          <span>Куда едем?</span>
+          <input type="text" value="Сочи, побережье" />
+        </label>
+        <label>
+          <span>Заезд</span>
+          <input type="date" value="2026-07-18" />
+        </label>
+        <label>
+          <span>Выезд</span>
+          <input type="date" value="2026-07-25" />
+        </label>
+        <label>
+          <span>Гости</span>
+          <select>
+            <option>2 взрослых</option>
+            <option>1 взрослый</option>
+            <option>Семья 2+1</option>
+            <option>Компания 4 человека</option>
+          </select>
+        </label>
+        <button type="submit">Показать цены</button>
+      </form>
+    </section>
+
+    <section class="stats-strip">
+      <div><strong>850+</strong><span>отелей у моря</span></div>
+      <div><strong>24/7</strong><span>поддержка гостей</span></div>
+      <div><strong>0 ₽</strong><span>комиссия за бронь</span></div>
+      <div><strong>5 мин</strong><span>до пляжа в подборках</span></div>
+    </section>
+
+    <section class="section" id="hotels">
+      <div class="section-heading">
+        <p class="eyebrow">Лучшие варианты</p>
+        <h2>Отели, в которые хочется улететь уже сегодня</h2>
+      </div>
+      <div class="hotel-grid">
+        <article class="hotel-card featured">
+          <img src="assets/hotel-coral.svg" alt="Отель Coral Bay Resort у моря" />
+          <div class="card-body">
+            <div class="card-top"><span class="tag">Хит сезона</span><span>5 ★</span></div>
+            <h3>Coral Bay Resort</h3>
+            <p>Панорамный бассейн, собственный пляж, завтраки на террасе и номера с видом на закат.</p>
+            <div class="price"><span>от</span><strong>12 900 ₽</strong><span>/ ночь</span></div>
+          </div>
+        </article>
+        <article class="hotel-card">
+          <img src="assets/hotel-sunrise.svg" alt="Отель Sunrise Palm Hotel" />
+          <div class="card-body">
+            <div class="card-top"><span class="tag blue">Семьям</span><span>4.8 ★</span></div>
+            <h3>Sunrise Palm Hotel</h3>
+            <p>Детский клуб, большой бассейн, песчаный пляж и прогулочная набережная рядом.</p>
+            <div class="price"><span>от</span><strong>8 400 ₽</strong><span>/ ночь</span></div>
+          </div>
+        </article>
+        <article class="hotel-card">
+          <img src="assets/hotel-lagoon.svg" alt="Lagoon Villa Suites" />
+          <div class="card-body">
+            <div class="card-top"><span class="tag green">Виллы</span><span>4.9 ★</span></div>
+            <h3>Lagoon Villa Suites</h3>
+            <p>Отдельные виллы, приватная терраса, тишина, пальмы и море в двух минутах.</p>
+            <div class="price"><span>от</span><strong>16 700 ₽</strong><span>/ ночь</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wave-section" id="places">
+      <div class="wave-card">
+        <div>
+          <p class="eyebrow">Направления</p>
+          <h2>Выбери настроение поездки</h2>
+          <p>Спокойный отдых, активные пляжи, романтический уикенд или семейный отпуск — сайт подскажет подходящий формат.</p>
+        </div>
+        <div class="place-list">
+          <button data-place="Релакс">🌴 Релакс у моря</button>
+          <button data-place="Сёрфинг">🏄 Сёрфинг и спорт</button>
+          <button data-place="Романтика">🌅 Закаты для двоих</button>
+          <button data-place="Семья">🧸 Семейный отдых</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split" id="reviews">
+      <div>
+        <p class="eyebrow">Отзывы</p>
+        <h2>Гости возвращаются за атмосферой</h2>
+        <p class="muted">Мы показываем только понятные карточки: фото, расстояние до пляжа, реальные удобства и итоговую цену без сюрпризов.</p>
+      </div>
+      <div class="review-stack">
+        <div class="review-card">
+          <strong>“Вид из номера был как открытка.”</strong>
+          <span>Марина · отдых в июле</span>
+        </div>
+        <div class="review-card offset">
+          <strong>“Забронировали за 3 минуты, пляж реально рядом.”</strong>
+          <span>Андрей · семейная поездка</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>SeaStay © 2026</span>
+    <span>Пляжные отели · виллы · апартаменты</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
